@@ -1,1 +1,109 @@
-<!doctype html><meta charset="utf-8"><title>Hello</title><h1>Hello from GitHub Pages</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open-Insect: Benchmarking Open-Set Recognition of Novel Species in Biodiversity Monitoring</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Open-Insect: Benchmarking Open-Set Recognition of Novel Species in Biodiversity Monitoring</h1>
+        <p>
+            Yuyan Chen<sup>1,2</sup>,
+            Nico Lang<sup>3</sup>,
+            B. Christian Schmidt<sup>4</sup>,
+            Aditya Jain<sup>2</sup>,
+            Yves Basset<sup>5,6,7</sup>,
+            Sara Beery<sup>8</sup>,
+            Maxim Larrivée<sup>9</sup>,
+            David Rolnick<sup>1,2</sup>
+        </p>
+        <p class="affiliations">
+            <sup>1</sup>McGill University &nbsp;&nbsp;
+            <sup>2</sup>Mila - Quebec Artificial Intelligence Institute &nbsp;&nbsp;
+            <sup>3</sup>University of Copenhagen &nbsp;&nbsp;
+            <sup>4</sup>Agriculture and Agri-food Canada &nbsp;&nbsp;
+            <sup>5</sup>Smithsonian Tropical Research Institute &nbsp;&nbsp;
+            <sup>6</sup>Biology Center, Czech Academy of Sciences &nbsp;&nbsp;
+            <sup>7</sup>Maestria de Entomologia, University of Panama &nbsp;&nbsp;
+            <sup>8</sup>Massachusetts Institute of Technology &nbsp;&nbsp;
+            <sup>9</sup>Montréal Insectarium
+        </p>
+        <p>
+            <a href="https://openreview.net/pdf?id=63Tia99ofI">📄 Paper</a> |
+            <a href="https://github.com/RolnickLab/Open-Insect">💻 Code</a> |
+            <a href="https://huggingface.co/datasets/yuyan-chen/open-insect">🤗 Dataset</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Abstract</h2>
+        <p>
+            Global biodiversity is declining at an unprecedented rate, yet little information is known about most
+            species and how their populations are changing. Indeed, some 90% Earth’s species are estimated to be
+            completely unknown. Machine learning has recently emerged as a promising tool to facilitate long-term,
+            large-scale biodiversity monitoring, including algorithms for fine-grained classification of species from
+            images. However, such algorithms typically are not designed to detect examples from categories unseen during
+            training – the problem of open-set recognition (OSR) – limiting their applicability for highly diverse,
+            poorly studied taxa such as insects. To address this gap, we introduce Open-Insect, a large-scale,
+            fine-grained dataset to evaluate unknown species detection across different geographic regions with varying
+            difficulty. We benchmark 38 OSR algorithms across three categories: post-hoc, training-time regularization,
+            and training with auxiliary data, finding that simple post-hoc approaches remain a strong baseline. We also
+            demonstrate how to leverage auxiliary data to improve species discovery in regions with limited data. Our
+            results provide timely insights to guide the development of computer vision methods for biodiversity
+            monitoring and species discovery.
+        </p>
+    </section>
+
+    <!-- <section>
+        <h2>Highlights</h2>
+        <ul>
+            <li>Introduces a large-scale insect species benchmark (moths + arthropods) focused on open-set recognition.
+            </li>
+            <li>Evaluates 38 OSR methods across three geographic regions and three open-set types.
+                :contentReference[oaicite:1]{index=1}</li>
+            <li>Shows that simple post-hoc methods still perform strongly, even in fine-grained domains.
+                :contentReference[oaicite:2]{index=2}</li>
+            <li>Demonstrates the importance of realistic auxiliary data for species discovery applications.
+                :contentReference[oaicite:3]{index=3}</li>
+        </ul>
+    </section> -->
+
+    <!-- <section>
+        <h2>Key Figures</h2>
+        <figure>
+            <img src="fig1.png" alt="Dataset overview of Open-Insect" />
+            <figcaption>Figure 1: Open-Insect dataset overview — taxonomic/region splits & visual difficulty.
+                :contentReference[oaicite:4]{index=4}</figcaption>
+        </figure>
+        <figure>
+            <img src="fig2.png" alt="Benchmark results on Open-Insect" />
+            <figcaption>Figure 2: Benchmark results of OSR methods on different open-set types.
+                :contentReference[oaicite:5]{index=5}</figcaption>
+        </figure>
+    </section> -->
+
+        <section>
+            <h2>Citation</h2>
+            <div style="overflow-x: auto; max-width: 100%;">
+                <pre><code>@inproceedings{chen2025openinsect,
+      title     = {Open-Insect: Benchmarking Open-Set Recognition of Novel Species in Biodiversity Monitoring},
+      author    = {Chen, Yuyan and Lang, Nico and Schmidt, B. Christian and Jain, Aditya and Basset, Yves and Beery, Sara and Larrivée, Maxim and Rolnick, David},
+      booktitle = {NeurIPS 2025 Track on Datasets & Benchmarks},
+      year      = {2025},
+      url       = {https://openreview.net/pdf?id=63Tia99ofI}
+    }</code></pre>
+            </div>
+        </section>
+
+
+
+    <footer>
+        <p>Open-Insect</p>
+    </footer>
+</body>
+
+</html>
