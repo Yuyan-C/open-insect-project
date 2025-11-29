@@ -80,21 +80,62 @@
     </section> -->
 
     <section>
-        <h2>Dataset Overview</h2>
-        <figure style="max-width:500px;margin:0 auto;">
-            <img src="imgs/dataset-overview.png" alt="Dataset overview of Open-Insect"
-                style="width:100%;height:auto;" />
-            <figcaption><strong>Figure 1</strong>: Visual dissimilarity across taxonomic levels: 1-hop (same genus),
-                2-hop (different
-                genus, same
+        <h2>Overview</h2>
+        <figure style="max-width:800px;margin:0 auto;">
+            <img src="imgs/overview.png" alt="Dataset overview of Open-Insect" style="width:100%;height:auto;" />
+            <figcaption><strong>Figure 1:</strong> Open-Insect benchmark results on three geographical regions with
+                varying difficulty.
+                The Open-Insect benchmark includes images of thousands of highly visually similar moth species,
+                along with non-moth arthropods, divided by geographic region. <strong>Left:</strong> Results from 38 OSR
+                methods
+                on three open-set types i) Local moth, ii) Non-local moth, and iii) Non-moth (see Table 2).
+                <strong>Right:</strong>
+                Visual dissimilarity across taxonomic levels: 1-hop (same genus), 2-hop (different genus, same
                 family), 3-hop (different family within Lepidoptera), and non-moths (different order, ≥4 hops).
             </figcaption>
         </figure>
-        <!-- <figure>
-            <img src="fig2.png" alt="Benchmark results on Open-Insect" />
-            <figcaption>Figure 2: Benchmark results of OSR methods on different open-set types.
-                :contentReference[oaicite:5]{index=5}</figcaption>
+
+        <figure style="max-width:500px;margin:0 auto;">
+
+            <!-- 
+            <img src="imgs/dataset-summary.png" alt="Dataset summary of Open-Insect" style="width:100%;height:auto;" />
+            <figcaption><strong>Table 1</strong>: The Open-Insect dataset. For each region,
+                we consider species in AMI-GBIF as the closed-set,
+                and species from nearby regions as local open-set. We
+                also provide auxiliary data with other species that are
+                available at train time. In addition, the Open-Insect
+                dataset provides a non-local open-set (O-NL) as well as
+                a non-moth open-set (O-NM). Species in the closed-, O-
+                L, or AUX sets may overlap across the three regions, but
+                not within a region. These images were compiled from
+                public data on GBIF. For C-America, we also include
+                197 images of 57 potentially new species (denoted as
+                “O-B”) collected by our team in BCI.
+            </figcaption>
+
         </figure> -->
+
+    </section>
+
+    <section>
+        <h2>Benchmark</h2>
+        <figure style="max-width:800px;margin:0 auto;">
+
+            <img src="imgs/result.png" alt="Benchmark result" style="width:100%;height:auto;" />
+            <figcaption><strong>Table 2: </strong>Benchmarking results on Open-Insect. We evaluate approaches falling
+                into three categories:
+                i) post-hoc methods, ii) training-time regularization, and iii) training with auxiliary data. Results
+                are
+                shown for the three regions in Open-Insect: NE-America, W-Europe, C-America. For each of the
+                three open-set splits - local (L), non-local (NL), and non-moth (NM) - the AUROC is reported along
+                with the accuracy of the closed-set. The best result within each category is bold, and the overall best
+                result is bold and underlined. For post-hoc methods, we report the mean(standard deviation) from three
+                training runs.
+            </figcaption>
+
+        </figure>
+
+
     </section>
 
     <section>
